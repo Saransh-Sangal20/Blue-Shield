@@ -11,7 +11,7 @@ module.exports = {
         'alert-yellow': '#fef3c7',
         'alert-orange': '#f97316',
         'success-green': '#10b981',
-        'danger-red': '#ef4444',
+        'danger-red': '#ef4444'
       },
       fontFamily: {
         'sans': ['Inter', 'system-ui', 'sans-serif'],

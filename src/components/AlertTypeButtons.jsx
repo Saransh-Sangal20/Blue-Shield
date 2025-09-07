@@ -42,8 +42,8 @@ const AlertTypeButtons = ({ activeAlert, setActiveAlert }) => {
   ];
 
   return (
-    <div className="border-2 border-gray-300 rounded-xl shadow-md p-2 h-50">
-      <div className="flex flex-col space-y-1">
+    <div className="border-2 border-gray-300 rounded-xl shadow-md p-2 h-50" style={{width: "285px"}}>
+      <div className="flex flex-col space-y-1 pl-1">
         {alertTypes.map((alertType) => (
           <button
             key={alertType.id}
