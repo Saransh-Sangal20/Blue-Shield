@@ -17,7 +17,7 @@ const SocialFeed = () => {
   }, []);
 
   return (
-    <div className="bg-white border rounded-xl shadow p-4 h-64 overflow-hidden flex flex-col" style={{height: "36rem"}}>
+    <div className="bg-white border rounded-xl shadow p-4 h-64 overflow-hidden flex flex-col mx-2" style={{height: "36rem"}}>
       {/* Inline animation styles */}
       <style>
         {`
@@ -36,7 +36,7 @@ const SocialFeed = () => {
 
       {/* Title */}
       <h2 className="text-3xl font-bold text-blue-800 border-b pb-2 mb-2">
-        Latest Hazard Updates
+        Latest Social Media Updates
       </h2>
 
       {/* Scrolling feed */}
