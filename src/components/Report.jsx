@@ -5,7 +5,7 @@ export default class HazardReportForm extends Component {
     return (
       <section className="w-full">
         {/* Container */}
-        <div className="max-w-9xl mx-auto bg-white rounded-xl p-10">
+        <div className="max-w-9xl mx-auto bg-gray-50 rounded-xl p-8">
           {/* Title */}
           <h1 className="text-4xl font-bold text-[#2E4B93] mb-8 border-b-2 pb-4">
             Report an Ocean Hazard

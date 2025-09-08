@@ -10,7 +10,7 @@ export default class Weather extends Component {
         };
     }
     async componentDidMount() {
-        let data = await fetch("https://api.weatherapi.com/v1/current.json?key=c2b1a54bbd3f4d33bbd230319250609&q=India&aqi=no");
+        let data = await fetch("https://api.weatherapi.com/v1/current.json?key=c2b1a54bbd3f4d33bbd230319250609&q=Muradnagar&aqi=no");
         let parsedData = await data.json();
         this.setState({
             responseData: parsedData,

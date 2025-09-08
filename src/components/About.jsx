@@ -14,7 +14,7 @@ const InfoCircle = ({ title, description, icon }) => {
 
 const About = () => {
   return (
-    <div className="bg-[#2E4B93]">
+    <div className="bg-[#2E4B93]" id="about">
       {/* Hero */}
       <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-10 pb-6">
         <h1 className="text-4xl sm:text-5xl font-bold text-yellow-400 text-center mb-6">

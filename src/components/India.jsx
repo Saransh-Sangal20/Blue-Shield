@@ -5,7 +5,7 @@ export default function India() {
   return (
     <>
     <div className="p-2 border border-gray-300 bg-white rounded-lg shadow-md h-full">
-        <img className='h-100' src={india} alt="India map"></img>
+        <img style={{height: "35rem"}} src={india} alt="India map"></img>
     </div>
     </>
   )

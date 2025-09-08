@@ -1,7 +1,7 @@
 import React from 'react';
 import { Link, useLocation } from 'react-router-dom';
 
-const Header = () => {
+const Header = ({setSignup}) => {
   const location = useLocation();
   
   return (
@@ -55,15 +55,13 @@ const Header = () => {
                   </svg>
                 </button>
                 
-                <a href="#main" className="text-sm text-gray-600 hover:text-gray-900">Skip to main content</a>
-                
                 <select className="text-sm border-none bg-transparent text-gray-600 focus:outline-none">
                   <option>English</option>
                   <option>हिन्दी</option>
                 </select>
               </div>
               <div>
-                <button className="px-3 py-2 rounded-md bg-blue-600 text-white font-medium hover:bg-blue-700 transition duration-200">
+                <button className="px-3 py-2 rounded-md bg-blue-600 text-white font-medium hover:bg-blue-700 transition duration-200" onClick={() => setSignup(true)}>
                   Sign Up / Login
                 </button>
               </div>
@@ -129,9 +127,9 @@ const Header = () => {
               
               
               <Link 
-                to="/dos" 
+                to="/safetyguide" 
                 className={`flex items-center space-x-1 px-4 py-2 rounded ${
-                  location.pathname.startsWith('/dos')
+                  location.pathname.startsWith('/safetyguide')
                     ? 'text-white bg-blue-500' 
                     : 'text-white hover:text-blue-200'
                 }`}
@@ -144,9 +142,9 @@ const Header = () => {
               
 
               <Link 
-                to="/contact" 
+                to="/helpdesk" 
                 className={`flex items-center space-x-1 px-4 py-2 rounded ${
-                  location.pathname === '/contact' 
+                  location.pathname === '/helpdesk' 
                     ? 'text-white bg-blue-500' 
                     : 'text-white hover:text-blue-200'
                 }`}
